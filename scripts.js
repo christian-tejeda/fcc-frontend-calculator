@@ -19,7 +19,7 @@ class Calculator {
     delete() {
         if (this.numbers[this.numbers.length - 1] !== ' ') {
             this.numbers.pop();
-            if (this.currentNumber != []) {
+            if (this.currentNumber.length > 0) {
                 this.currentNumber.pop();
             }
             this.currentOperandTextElement.innerText = this.currentOperandTextElement.innerText.toString().slice(0, -1);
